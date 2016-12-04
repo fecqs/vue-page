@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>vue-router</title>
-  <!-- <link rel="stylesheet" href="css/amazeui.min.css"> -->
-  <script src="./vue.js" ></script>
+
+  <script src="../vue.js" ></script>
   <style>
   body{
       font-family:"Segoe UI";
@@ -38,7 +38,7 @@
       }
       .pagination li.active a{
         background:#0E90D2;
-        color:#fff; 
+        color:#fff;
       }
   </style>
 </head>
@@ -104,23 +104,6 @@
 
 var vm = new Vue({
   el:'#app',
-  data:{
-
-  },
-  methods:{
-
-    add:function(index){
-      if(index >= this.allpage) return;
-      this.current = ++index;
-    },
-    reduce:function(index){
-      if(index <= 1) return;
-      this.current = --index;
-    },
-    getData:function(index){
-      console.log(index)
-    }
-  }
 })
 
 
